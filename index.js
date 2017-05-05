@@ -1,6 +1,7 @@
 'use strict';
 
-var http = require('https');
+const port = process.env.PORT || 8898;
+var http = require('http');
 var Player = require('./score_MDL');
 var eventsConfig = require('./score_MDL/config').events;
 var express = require('express');
@@ -29,7 +30,7 @@ app.get('/',  (req, res) => {
 });
 
 //create server and listen to PORT 8080
-http.createServer(app).listen(4050);
+http.createServer(app).listen(port);
 console.log("Connection created and listen to PORT 8080");
 
 
