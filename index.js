@@ -1,6 +1,6 @@
 'use strict';
 
-var http = require('http');
+var http = require('https');
 var Player = require('./score_MDL');
 var eventsConfig = require('./score_MDL/config').events;
 var express = require('express');
